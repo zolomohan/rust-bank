@@ -1,4 +1,3 @@
-#[derive(Debug)]
 struct Account {
     id: usize,
     balance: isize,
@@ -34,7 +33,6 @@ impl Account {
     }
 }
 
-#[derive(Debug)]
 struct Bank {
     accounts: Vec<Account>,
 }
