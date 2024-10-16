@@ -13,14 +13,12 @@ impl Account {
         };
     }
 
-    fn deposit(&mut self, amount: isize) -> isize {
+    fn deposit(&mut self, amount: isize) {
         self.balance += amount;
-        return self.balance;
     }
 
-    fn withdraw(&mut self, amount: isize) -> isize {
+    fn withdraw(&mut self, amount: isize) {
         self.balance -= amount;
-        return self.balance;
     }
 
     fn summary(&self) -> String {
